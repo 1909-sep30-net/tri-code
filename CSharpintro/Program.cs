@@ -24,13 +24,13 @@ namespace CSharpIntro
             Console.WriteLine(i);
 
             //do something in a for loop
-            for(int i1 = 0; i1 > 5; i1++){
+            for(int i1 = 0; i1 < 5; i1++){
                 Console.WriteLine("privyet");
             }
 
             //do something in while loop
             int w = 0;
-            while(w > 3){
+            while(w < 3){
                 Console.WriteLine("lightweight");
                 w++;
             }
@@ -61,8 +61,8 @@ namespace CSharpIntro
                 Console.WriteLine("if success");
             }
 
-            else if (condition < 70){
-                Console.WriteLine("else if document");
+            else if (condition == 100){
+                Console.WriteLine("else if success");
             }
             else{
                 Console.WriteLine("else ");
@@ -76,9 +76,19 @@ namespace CSharpIntro
 
             //figure out how to fomrat your docuent in VS COde
 
-            //extra : make new static method to do something and call it 
+            //extra : make new static method to do something and call it
+            static string Quote(string s){
+                return "/" + s + "/";
+            }
+
+            //string interpolation syntax: return $"|"{s}"|";
+            Console .WriteLine(Quote("Cheese"));
+
+
 
             //extra: learn what var means in C# amd try it
+            var v1 = "v1";
+            var v2 = 4.5;
         }
     }
 }
