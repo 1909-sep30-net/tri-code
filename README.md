@@ -1,2 +1,1 @@
-# tri-code
-Notes and demos for Revature.
+# trainer-code
